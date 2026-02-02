@@ -4,6 +4,7 @@
   --yellow: #ffff00;
   --blue: #35b7fc;
   --green: #0c5728;
+  --purple: #a876e6;
 }
 
 body {
@@ -29,29 +30,30 @@ body {
 .nav-bar {
   position: relative;
   display: grid;
-  top: 0px;
-  width: 100%;
-  height: 50px;
+  width: 100vw;
+  height: 80px;
   margin: 0 auto;
-  padding: 15px 5px;
+  padding: 30px auto;
   border-style: solid;
   align-items: center;
-  justify-content: center;
+  align-content: center;
+  justify-items: start;
+  justify-content: space-between;
   background: linear-gradient(90deg, #fce0d7, #fcf3de);
-  grid-template-rows: 100%;
-  grid-template-columns: 15% 70%;
-  grid-gap: 20px;
+  grid-template-rows: 50px;
+  grid-template-columns: 29% 70%;
   opacity: 0.9;
-  overflow-y: hidden;
   z-index: 1;
 }
 
 .logo-bar img {
+  position: relative;
   width: 100%;
   border-radius: 80%;
   z-index: 3;
-  top: 0 !important;
+  margin-left: 100px;
   padding-top: 10px;
+  transform: scale(0.4);
 }
 
 #title {
@@ -80,7 +82,7 @@ h2 {
 }
 
 h3, p {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .container {
@@ -193,19 +195,19 @@ article {
   font-size: 1.2em;
 }
 
-#tribute-link {
-  font-size: 2em;
+.tributes {
+  background-color: #a876e6;
+  padding: 50px;
+  border: var(--yellow) 55px solid;
+  border-radius: 15px;
 }
 
 .bold {
   font-weight: bold;
 }
 
-#tribute-info {
-  width: 80%;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+.tribute {
+ margin: 0;
   white-space: pre-line;
 }
 
