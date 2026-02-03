@@ -7,6 +7,10 @@
   --purple: #a876e6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -27,6 +31,28 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: var(--yellow);
+}
+
+.button-top {
+  display: flex;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 50px;
+  background-color: var(--purple);
+  text-transform:capitalize;
+  text-decoration: none;
+  color: var(--yellow);
+  font-size: 1.5em;
+  font-weight: 700;
+  justify-content: center;
+  border-radius: 15px;
+}
+/* Navigation bar START */
 .nav-bar {
   position: relative;
   display: grid;
@@ -34,7 +60,7 @@ body {
   height: 80px;
   margin: 0 auto;
   padding: 30px auto;
-  border-style: solid;
+  border: 1px solid black;
   align-items: center;
   align-content: center;
   justify-items: start;
@@ -55,12 +81,12 @@ body {
   padding-top: 10px;
   transform: scale(0.4);
 }
+/* Navigation bar END */
 
 #title {
   margin: 10px;
   height: 120px;
   font-size: 2em;
-  white-space: pre-line;
   text-align: center;
 }
 
@@ -202,6 +228,10 @@ article {
   border-radius: 15px;
 }
 
+.pre-line {
+  white-space: pre-line;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -209,6 +239,19 @@ article {
 .tribute {
  margin: 0;
   white-space: pre-line;
+}
+
+.cast-article {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 20px;
+  align-items: center;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
 }
 
 #footer-img {
@@ -228,6 +271,7 @@ article {
 #footer {
   font-family: "Covered By Your Grace", cursive;
 }
+
 
 @media screen and (max-width: 480px) {
   body {
